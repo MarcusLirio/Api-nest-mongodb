@@ -1,6 +1,11 @@
+import { Double } from "typeorm";
+
 export interface Item {
   id?: string;
-  name: string;
-  description?: string;
-  qty: number;
+  externalId: string;
+  cpf?: number;
+  installmentValue: Double;
+  installmentNumber: number;
+  statusCharge: string;
+  billingDate: Date;
 }

@@ -1,5 +1,10 @@
+import { Double } from "typeorm";
+
 export class CreateItemDto {
-  readonly name: string;
-  readonly description: string;
-  readonly qty: number;
+  readonly externalId: string;
+  readonly cpf: number;
+  readonly installmentValue: Double;
+  readonly installmentNumber: number;
+  readonly statusCharge: string;
+  readonly billingDate: Date;
 }
